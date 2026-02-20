@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as a placeholder backend with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report documenting five implemented features for the Spyderstild gaming peripherals website, including homepage, visual theme, product showcases, navigation, and generated assets.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of all frontend source files describing components, data, hooks, and configuration for the Spyderstild gaming website.",
+  "frontend/index.css": "Tailwind CSS base styles with custom CSS variables defining OKLCH color system for light and dark themes with neon accent colors.",
+  "frontend/index.html": "HTML entry point with root div and module script reference for the React application titled 'Spyderstild Gaming PC Website'.",
+  "frontend/src/App.tsx": "Root React component rendering Header, HomePage, and Footer in a flex column layout with dark background.",
+  "frontend/src/components/Footer.tsx": "Footer component with brand info, category navigation buttons, social media links, copyright notice, and Caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/Header.tsx": "Sticky header with Spyderstild logo, desktop/mobile navigation menus, and smooth scroll functionality to product category sections.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section with background image, animated neon gradient title, tagline, CTA button, scroll indicator, and geometric decorative elements.",
+  "frontend/src/components/HomePage.tsx": "Main page component orchestrating HeroSection and three ProductCategorySection components for mice, keyboards, and monitors with respective data and accent colors.",
+  "frontend/src/components/ProductCard.tsx": "Reusable product card with hover effects, neon borders, placeholder image area with icon, product details, specs list, and customizable accent colors.",
+  "frontend/src/components/ProductCategorySection.tsx": "React component that renders a product category section with a title, description, banner image, and a grid of product cards, supporting three neon accent colors (green, cyan, orange).",
+  "frontend/src/data/products.ts": "Defines Product interface and exports static product data arrays for three categories: mice, keyboards, and monitors, each with name, description, icon, and specs.",
+  "frontend/src/hooks/useActor.ts": "React Query hook that creates and manages an ICP backend actor instance based on Internet Identity authentication state, invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity authentication context and hooks for ICP integration, managing login/logout state and identity persistence with AuthClient.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file for React Query hooks to interact with backend; currently no backend functionality is implemented.",
+  "frontend/src/index.css": "Global CSS with Tailwind configuration defining dark theme color palette using OKLCH color space with neon accents (green, cyan, orange, red), custom fonts (Orbitron, Rajdhani, Inter), and utility classes for geometric shapes and neon glow effects.",
+  "frontend/src/main.tsx": "Application entry point that sets up React root with QueryClientProvider and InternetIdentityProvider wrappers around the main App component.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending theme with OKLCH color system, custom neon colors, gaming-inspired fonts, geometric utilities, and animation keyframes.",
+  "project_state.json": "Project metadata tracking Spyderstild gaming peripherals website features, including homepage sections, futuristic design theme, product showcases, navigation, and required generated image assets."
+}

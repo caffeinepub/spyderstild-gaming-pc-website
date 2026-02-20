@@ -1,0 +1,124 @@
+{
+  "kind": "build_request",
+  "title": "Create gaming PC peripheral showcase website",
+  "projectName": "Spyderstild Shop",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a homepage for www.spyderstild.shop that showcases high-end gaming peripherals with sections for mice, keyboards, and monitors",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Generate my website",
+          "www.spyderstild.shop",
+          "high-end gaming peripherals like mice, keyboards, and monitors"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Homepage displays gaming peripheral categories: mice, keyboards, and monitors",
+        "Layout is organized with clear sections for each product category",
+        "Site is accessible at the root route"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement a bold, futuristic visual theme with dark backgrounds, neon accents, sharp geometric shapes, and modern gaming-inspired typography throughout the entire website",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "bold, futuristic design"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Dark color scheme with vibrant neon accent colors (avoid blue and purple)",
+        "Sharp, angular geometric design elements",
+        "Modern, tech-inspired typography consistent across all pages",
+        "Cohesive futuristic aesthetic applied to all components"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create product showcase sections with visual cards for gaming mice, keyboards, and monitors with placeholder product information",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "gaming peripherals like mice, keyboards, and monitors"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each product category has dedicated showcase section",
+        "Product cards display placeholder images, names, and brief descriptions",
+        "Cards follow the futuristic design theme",
+        "Layout is responsive and grid-based"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Add navigation header with site branding for Spyderstild and links to product category sections",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "www.spyderstild.shop",
+          "spydermine"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Header displays Spyderstild branding",
+        "Navigation links to mice, keyboards, and monitors sections",
+        "Header remains visible and follows futuristic design theme",
+        "Navigation is functional and responsive"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Generate rendered images of the generated hero background, product category banners, and Spyderstild logo as static assets in frontend/public/assets/generated",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images are saved to frontend/public/assets/generated directory",
+        "Images are referenced in the frontend code using correct paths",
+        "All generated images render correctly in the UI"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use only React, TypeScript, Tailwind CSS, and Shadcn components for frontend",
+    "Do not use blue or purple as primary theme colors",
+    "Keep all backend logic in single main.mo actor file",
+    "Do not modify immutable frontend paths including hooks and UI components"
+  ],
+  "nonGoals": [
+    "Implementing actual e-commerce functionality or payment processing",
+    "Creating a full product database or inventory system",
+    "Adding user accounts or authentication",
+    "Implementing shopping cart functionality",
+    "Real product data integration"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Futuristic gaming hero background with dark tones, neon geometric patterns, and tech aesthetic (hero-background.dim_1920x1080.png)",
+      "Spyderstild logo with bold, angular lettering and gaming aesthetic in neon colors (spyderstild-logo.dim_400x120.png)",
+      "Gaming mouse category banner with futuristic neon highlights and dark background (mice-banner.dim_800x400.png)",
+      "Gaming keyboard category banner with RGB lighting effects and futuristic elements (keyboard-banner.dim_800x400.png)",
+      "Gaming monitor category banner with glowing screen effect and tech patterns (monitor-banner.dim_800x400.png)"
+    ],
+    "edits": []
+  }
+}

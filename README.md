@@ -1,2 +1,3 @@
-# spyderstild-gaming-pc-website
-Exported from Caffeine project: Spyderstild Gaming PC Website
+## Spyderstild Gaming PC Website
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`
