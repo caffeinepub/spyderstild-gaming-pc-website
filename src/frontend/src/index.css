@@ -5,138 +5,93 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --radius: 0rem;
-        
-        /* Dark backgrounds */
-        --background: 0.12 0 0;
-        --foreground: 0.95 0 0;
-        --card: 0.15 0 0;
-        --card-foreground: 0.95 0 0;
-        --popover: 0.15 0 0;
-        --popover-foreground: 0.95 0 0;
-        
-        /* Neon accent colors - avoiding blue and purple */
-        --neon-green: 0.75 0.25 145;
-        --neon-cyan: 0.70 0.20 195;
-        --neon-orange: 0.70 0.22 45;
-        --neon-red: 0.65 0.25 25;
-        
-        /* Semantic colors using neon palette */
-        --primary: 0.75 0.25 145;
-        --primary-foreground: 0.12 0 0;
-        --secondary: 0.20 0 0;
-        --secondary-foreground: 0.95 0 0;
-        --muted: 0.25 0 0;
-        --muted-foreground: 0.60 0 0;
-        --accent: 0.70 0.20 195;
-        --accent-foreground: 0.12 0 0;
-        --destructive: 0.65 0.25 25;
-        --destructive-foreground: 0.95 0 0;
-        
-        /* Borders and inputs */
-        --border: 0.30 0 0;
-        --input: 0.25 0 0;
-        --ring: 0.75 0.25 145;
-        
-        /* Chart colors */
-        --chart-1: 0.75 0.25 145;
-        --chart-2: 0.70 0.20 195;
-        --chart-3: 0.70 0.22 45;
-        --chart-4: 0.65 0.25 25;
-        --chart-5: 0.68 0.23 85;
-    }
+  :root {
+    --background: oklch(0.12 0.02 240);
+    --foreground: oklch(0.98 0.01 240);
+    --card: oklch(0.15 0.02 240);
+    --card-foreground: oklch(0.98 0.01 240);
+    --popover: oklch(0.15 0.02 240);
+    --popover-foreground: oklch(0.98 0.01 240);
+    --primary: oklch(0.75 0.25 145);
+    --primary-foreground: oklch(0.12 0.02 240);
+    --secondary: oklch(0.20 0.03 240);
+    --secondary-foreground: oklch(0.98 0.01 240);
+    --muted: oklch(0.20 0.03 240);
+    --muted-foreground: oklch(0.65 0.05 240);
+    --accent: oklch(0.75 0.25 145);
+    --accent-foreground: oklch(0.12 0.02 240);
+    --destructive: oklch(0.60 0.25 25);
+    --destructive-foreground: oklch(0.98 0.01 240);
+    --border: oklch(0.25 0.03 240);
+    --input: oklch(0.25 0.03 240);
+    --ring: oklch(0.75 0.25 145);
+    --radius: 0rem;
+    --neon-green: oklch(0.75 0.25 145);
+    --neon-cyan: oklch(0.75 0.25 195);
+    --neon-orange: oklch(0.75 0.25 45);
+    --neon-red: oklch(0.65 0.28 25);
+  }
 
-    .dark {
-        --background: 0.08 0 0;
-        --foreground: 0.98 0 0;
-        --card: 0.12 0 0;
-        --card-foreground: 0.98 0 0;
-        --popover: 0.12 0 0;
-        --popover-foreground: 0.98 0 0;
-        --primary: 0.75 0.25 145;
-        --primary-foreground: 0.08 0 0;
-        --secondary: 0.18 0 0;
-        --secondary-foreground: 0.98 0 0;
-        --muted: 0.22 0 0;
-        --muted-foreground: 0.65 0 0;
-        --accent: 0.70 0.20 195;
-        --accent-foreground: 0.08 0 0;
-        --destructive: 0.65 0.25 25;
-        --destructive-foreground: 0.98 0 0;
-        --border: 0.25 0 0;
-        --input: 0.22 0 0;
-        --ring: 0.75 0.25 145;
-    }
-
-    * {
-        @apply border-border;
-    }
-    
-    body {
-        @apply bg-background text-foreground font-body;
-        font-feature-settings: "rlig" 1, "calt" 1;
-    }
-    
-    h1, h2, h3, h4, h5, h6 {
-        @apply font-display;
-    }
+  .dark {
+    --background: oklch(0.12 0.02 240);
+    --foreground: oklch(0.98 0.01 240);
+    --card: oklch(0.15 0.02 240);
+    --card-foreground: oklch(0.98 0.01 240);
+    --popover: oklch(0.15 0.02 240);
+    --popover-foreground: oklch(0.98 0.01 240);
+    --primary: oklch(0.75 0.25 145);
+    --primary-foreground: oklch(0.12 0.02 240);
+    --secondary: oklch(0.20 0.03 240);
+    --secondary-foreground: oklch(0.98 0.01 240);
+    --muted: oklch(0.20 0.03 240);
+    --muted-foreground: oklch(0.65 0.05 240);
+    --accent: oklch(0.75 0.25 145);
+    --accent-foreground: oklch(0.12 0.02 240);
+    --destructive: oklch(0.60 0.25 25);
+    --destructive-foreground: oklch(0.98 0.01 240);
+    --border: oklch(0.25 0.03 240);
+    --input: oklch(0.25 0.03 240);
+    --ring: oklch(0.75 0.25 145);
+    --neon-green: oklch(0.75 0.25 145);
+    --neon-cyan: oklch(0.75 0.25 195);
+    --neon-orange: oklch(0.75 0.25 45);
+    --neon-red: oklch(0.65 0.28 25);
+  }
 }
 
-@layer utilities {
-    /* Clip corner utility for geometric shapes */
-    .clip-corner {
-        clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
-    }
-    
-    .clip-corner-lg {
-        clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 24px, 100% 100%, 24px 100%, 0 calc(100% - 24px));
-    }
-    
-    /* Neon glow effects */
-    .shadow-neon-green {
-        box-shadow: 0 0 20px oklch(var(--neon-green) / 0.5);
-    }
-    
-    .shadow-neon-cyan {
-        box-shadow: 0 0 20px oklch(var(--neon-cyan) / 0.5);
-    }
-    
-    .shadow-neon-orange {
-        box-shadow: 0 0 20px oklch(var(--neon-orange) / 0.5);
-    }
-    
-    /* Scan line animation */
-    @keyframes scan {
-        0% {
-            transform: translateY(-100%);
-        }
-        100% {
-            transform: translateY(100%);
-        }
-    }
-    
-    .animate-scan {
-        animation: scan 3s linear infinite;
-    }
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
 }
 
-@layer components {
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {
-        width: 12px;
-    }
-    
-    ::-webkit-scrollbar-track {
-        background: oklch(var(--background));
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        background: oklch(var(--neon-green) / 0.3);
-        border-radius: 0;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-        background: oklch(var(--neon-green) / 0.5);
-    }
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: oklch(0.15 0.02 240);
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(0.75 0.25 145);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.80 0.28 145);
+}
+
+/* Geometric Clip Paths */
+.clip-corner {
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+}
+
+.clip-corner-large {
+  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px));
 }

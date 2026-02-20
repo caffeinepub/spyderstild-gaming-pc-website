@@ -1,15 +1,17 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 3,
-  "summary": "Gaming PC website for www.spyderstild.shop showcasing high-end gaming peripherals (mice, keyboards, monitors) with a bold, futuristic design",
+  "projectStateVersion": 5,
+  "summary": "Gaming PC website for www.spyderstild.shop showcasing high-end gaming peripherals (mice, keyboards, monitors) and PC builds including a gaming PC (9.3GB) and hacking PC (12.8GB) with a bold, futuristic design",
   "architectural_notes": [
     "Website domain: www.spyderstild.shop",
     "Target audience: Gaming PC enthusiasts",
-    "Product focus: High-end gaming peripherals"
+    "Product focus: High-end gaming peripherals",
+    "Product offerings expanded to include complete PC builds",
+    "PC builds: Gaming PC (9.3GB), Hacking PC (12.8GB)"
   ],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Futuristic gaming hero background with dark tones, neon geometric patterns, and tech aesthetic (hero-background.dim_1920x1080.png)\n- Spyderstild logo with bold, angular lettering and gaming aesthetic in neon colors (spyderstild-logo.dim_400x120.png)\n- Gaming mouse category banner with futuristic neon highlights and dark background (mice-banner.dim_800x400.png)\n- Gaming keyboard category banner with RGB lighting effects and futuristic elements (keyboard-banner.dim_800x400.png)\n- Gaming monitor category banner with glowing screen effect and tech patterns (monitor-banner.dim_800x400.png)",
+  "imageRequirements": "## Required Images\n- Futuristic PC builds category banner with dark background and red neon accents showing high-performance gaming computers (pc-builds-banner.dim_1200x400.png)",
   "existing_features": [
     {
       "id": "feature-create-a-homepage-for-www-spyderstild-shop-that-showcases-high-end-gaming-peripherals-with-sections-for-mice-keyboards-and-monitors",
@@ -50,6 +52,46 @@
         "REQ-5"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-create-a-new-productcategorysection-for-pc-builds-showcasing-two-pre-built-systems-a-gaming-pc-9-3gb-and-a-hacking-pc-12-8gb",
+      "title": "Create a new ProductCategorySection for PC builds showcasing two pre-built systems: a gaming PC (9.3GB) and a hacking PC (12.8GB)",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-pc-builds-data-to-frontend-src-data-products-ts-with-gaming-pc-9-3gb-and-hacking-pc-12-8gb-specifications",
+      "title": "Add PC builds data to frontend/src/data/products.ts with gaming PC (9.3GB) and hacking PC (12.8GB) specifications",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-homepage-component-to-render-pc-builds-section-with-red-neon-accent-color-below-the-monitors-section",
+      "title": "Update HomePage component to render PC builds section with red neon accent color below the monitors section",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-header-navigation-to-include-pc-builds-link-that-scrolls-to-the-new-pc-builds-section",
+      "title": "Update Header navigation to include PC Builds link that scrolls to the new PC builds section",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-footer-navigation-to-include-pc-builds-category-link",
+      "title": "Update Footer navigation to include PC Builds category link",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -68,6 +110,12 @@
     {
       "id": "AR-3",
       "summary": "Add product categories for mice, keyboards, and monitors",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add PC builds section with gaming PC (9.3GB) and hacking PC (12.8GB)",
       "reqIds": [],
       "status": "pending"
     }

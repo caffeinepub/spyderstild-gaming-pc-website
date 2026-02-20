@@ -53,6 +53,14 @@ export default function Footer() {
                   Gaming Monitors
                 </button>
               </li>
+              <li>
+                <button
+                  onClick={() => document.getElementById('pc-builds')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="hover:text-neon-red transition-colors"
+                >
+                  PC Builds
+                </button>
+              </li>
             </ul>
           </div>
 

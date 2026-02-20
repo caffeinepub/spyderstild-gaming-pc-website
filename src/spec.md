@@ -1,13 +1,13 @@
 # Specification
 
 ## Summary
-**Goal:** Create a futuristic gaming peripheral showcase website for Spyderstild Shop featuring mice, keyboards, and monitors.
+**Goal:** Add a PC builds section to the Spyderstild homepage showcasing two pre-built systems: a gaming PC (9.3GB) and a hacking PC (12.8GB).
 
 **Planned changes:**
-- Build homepage with navigation header and Spyderstild branding
-- Implement bold, futuristic design theme with dark backgrounds, neon accents (avoiding blue/purple), sharp geometric shapes, and gaming-inspired typography
-- Create product showcase sections with visual cards for gaming mice, keyboards, and monitors with placeholder content
-- Add navigation links to product category sections
-- Generate and integrate custom images for hero background, category banners, and logo
+- Create new PC builds product category section on homepage with two product cards (gaming PC 9.3GB, hacking PC 12.8GB)
+- Add pcBuilds data array to products.ts with specifications for both systems
+- Update HomePage component to render PC builds section with red neon accent below monitors section
+- Add "PC Builds" navigation link to Header that scrolls to the new section
+- Add "PC Builds" category link to Footer
 
-**User-visible outcome:** Users can visit www.spyderstild.shop and browse a futuristic-themed showcase of gaming peripherals organized by category (mice, keyboards, monitors) with striking visuals and modern design.
+**User-visible outcome:** Users can view two pre-built PC options (gaming and hacking) on the homepage, and navigate to this section via header and footer links.

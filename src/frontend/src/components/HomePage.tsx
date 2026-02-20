@@ -1,6 +1,6 @@
 import HeroSection from './HeroSection';
 import ProductCategorySection from './ProductCategorySection';
-import { miceProducts, keyboardProducts, monitorProducts } from '../data/products';
+import { miceProducts, keyboardProducts, monitorProducts, pcBuilds } from '../data/products';
 
 export default function HomePage() {
   return (
@@ -32,6 +32,15 @@ export default function HomePage() {
         bannerImage="/assets/generated/monitor-banner.dim_800x400.png"
         products={monitorProducts}
         accentColor="neon-orange"
+      />
+
+      <ProductCategorySection
+        id="pc-builds"
+        title="PC Builds"
+        description="Custom-built systems for gaming and professional work"
+        bannerImage="/assets/generated/pc-builds-banner.dim_1200x400.png"
+        products={pcBuilds}
+        accentColor="neon-red"
       />
     </div>
   );

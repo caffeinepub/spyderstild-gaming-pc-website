@@ -112,3 +112,28 @@ export const monitorProducts: Product[] = [
     ]
   }
 ];
+
+export const pcBuilds: Product[] = [
+  {
+    name: 'Gaming PC',
+    description: 'High-performance gaming rig built for maximum FPS and ultra settings in the latest AAA titles.',
+    icon: '💻',
+    specs: [
+      '9.3GB Storage',
+      'RGB Liquid Cooling',
+      'Tempered Glass Case',
+      'WiFi 6E Ready'
+    ]
+  },
+  {
+    name: 'Hacking PC',
+    description: 'Professional workstation optimized for security research, penetration testing, and development.',
+    icon: '🔒',
+    specs: [
+      '12.8GB Storage',
+      'Multi-Monitor Support',
+      'Enhanced Security Features',
+      'Silent Operation'
+    ]
+  }
+];

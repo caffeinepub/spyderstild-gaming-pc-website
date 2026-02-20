@@ -7,7 +7,7 @@ interface ProductCategorySectionProps {
   description: string;
   bannerImage: string;
   products: Product[];
-  accentColor: 'neon-green' | 'neon-cyan' | 'neon-orange';
+  accentColor: 'neon-green' | 'neon-cyan' | 'neon-orange' | 'neon-red';
 }
 
 export default function ProductCategorySection({
@@ -22,12 +22,14 @@ export default function ProductCategorySection({
     'neon-green': 'border-neon-green',
     'neon-cyan': 'border-neon-cyan',
     'neon-orange': 'border-neon-orange',
+    'neon-red': 'border-neon-red',
   }[accentColor];
 
   const textColorClass = {
     'neon-green': 'text-neon-green',
     'neon-cyan': 'text-neon-cyan',
     'neon-orange': 'text-neon-orange',
+    'neon-red': 'text-neon-red',
   }[accentColor];
 
   return (

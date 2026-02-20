@@ -2,7 +2,7 @@ import type { Product } from '../data/products';
 
 interface ProductCardProps {
   product: Product;
-  accentColor: 'neon-green' | 'neon-cyan' | 'neon-orange';
+  accentColor: 'neon-green' | 'neon-cyan' | 'neon-orange' | 'neon-red';
 }
 
 export default function ProductCard({ product, accentColor }: ProductCardProps) {
@@ -10,18 +10,21 @@ export default function ProductCard({ product, accentColor }: ProductCardProps) 
     'neon-green': 'border-neon-green group-hover:border-neon-green',
     'neon-cyan': 'border-neon-cyan group-hover:border-neon-cyan',
     'neon-orange': 'border-neon-orange group-hover:border-neon-orange',
+    'neon-red': 'border-neon-red group-hover:border-neon-red',
   }[accentColor];
 
   const shadowColorClass = {
     'neon-green': 'group-hover:shadow-neon-green',
     'neon-cyan': 'group-hover:shadow-neon-cyan',
     'neon-orange': 'group-hover:shadow-neon-orange',
+    'neon-red': 'group-hover:shadow-neon-red',
   }[accentColor];
 
   const textColorClass = {
     'neon-green': 'text-neon-green',
     'neon-cyan': 'text-neon-cyan',
     'neon-orange': 'text-neon-orange',
+    'neon-red': 'text-neon-red',
   }[accentColor];
 
   return (
