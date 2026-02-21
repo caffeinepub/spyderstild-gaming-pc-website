@@ -1,23 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add Viper Elite gaming mouse to mice product category",
+  "title": "Add Viper Elite to gaming mice catalog",
   "requirements": [
     {
-      "id": "REQ-17",
-      "summary": "Add Viper Elite gaming mouse to the mice product array with complete gaming specifications",
+      "id": "REQ-1",
+      "summary": "Add Viper Elite gaming mouse product to the mice array in products.ts with complete specifications",
       "acceptanceCriteria": [
-        "A new product object for Viper Elite mouse is added to the mice array",
-        "Product includes all standard fields: name, price, description, image, specs",
-        "Specifications include gaming-relevant details like DPI, polling rate, sensor, weight",
-        "Product data follows the same structure and format as existing mice products",
-        "The new mouse appears in the Mice section on the homepage"
+        "Viper Elite appears in the gaming mice product grid on the homepage",
+        "Product card displays with consistent styling matching other mice products",
+        "Product includes specifications array with relevant gaming mouse specs"
       ],
       "file_operations": [
         {
           "path": "frontend/src/data/products.ts",
           "operation": "modify",
-          "description": "Add a new Viper Elite gaming mouse product object to the mice array. Include all required fields: name set to 'Viper Elite', competitive price point consistent with existing high-end mice, compelling description highlighting gaming performance, image path (can use placeholder or existing mouse image), and comprehensive specs object containing DPI range (e.g., 100-30000), polling rate (e.g., 1000Hz), sensor type (e.g., optical), weight in grams, connectivity options (wired/wireless), and any additional gaming-relevant specifications. Follow the exact Product interface structure and formatting conventions used by the existing six mouse products in the array."
+          "description": "Add new Viper Elite gaming mouse object to the mice array following the existing Product interface structure. Include name, description, price, and specifications array with gaming-relevant specs (DPI, sensor type, weight, polling rate, etc.) that match the pattern and detail level of existing mice products like Viper V3 Pro and Basilisk V3 Pro. Ensure price is consistent with the premium gaming mice pricing tier ($149-199 range). Use green neon accent color consistent with mice category requirements."
         }
       ]
     }

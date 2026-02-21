@@ -1,9 +1,9 @@
 # Specification
 
 ## Summary
-**Goal:** Add Viper Elite gaming mouse to the mice product category.
+**Goal:** Add the Viper Elite gaming mouse to the product catalog.
 
 **Planned changes:**
-- Add a new Viper Elite product entry to the mice array in frontend/src/data/products.ts with complete specifications (name, price, description, DPI range, polling rate, sensor type, weight, connectivity)
+- Add Viper Elite product entry to the mice array in frontend/src/data/products.ts with name, description, price, and specifications
 
-**User-visible outcome:** The Viper Elite gaming mouse appears in the Mice section on the homepage with full product details and specifications.
+**User-visible outcome:** Users can view the Viper Elite gaming mouse in the mice product grid on the homepage alongside existing gaming mice products.

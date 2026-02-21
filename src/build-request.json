@@ -1,38 +1,36 @@
 {
   "kind": "build_request",
-  "title": "Add Viper Elite gaming mouse to mice product category",
-  "projectName": "Spyderstild Gaming",
+  "title": "Add Viper Elite to gaming mice catalog",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-17",
-      "text": "Add a new Viper Elite gaming mouse product entry to the mice array in frontend/src/data/products.ts with complete specifications including name, price, description, and gaming-relevant specs (DPI range, polling rate, sensor type, weight, connectivity, etc.) following the existing product data structure",
+      "id": "REQ-1",
+      "text": "Add a new Viper Elite gaming mouse product to the mice array in frontend/src/data/products.ts with name, description, price, and specifications following the existing product data structure",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-last"
+          "msg-user-final"
         ],
         "quotes": [
-          "add mice in viper elite"
+          "add to gaming mice viper elite"
         ]
       },
       "acceptanceCriteria": [
-        "A new product object for Viper Elite mouse is added to the mice array",
-        "Product includes all standard fields: name, price, description, image, specs",
-        "Specifications include gaming-relevant details like DPI, polling rate, sensor, weight",
-        "Product data follows the same structure and format as existing mice products",
-        "The new mouse appears in the Mice section on the homepage"
+        "Viper Elite appears in the gaming mice product grid on the homepage",
+        "Product card displays with consistent styling matching other mice products",
+        "Product includes specifications array with relevant gaming mouse specs"
       ]
     }
   ],
   "constraints": [
-    "Follow the existing Product interface structure defined in frontend/src/data/products.ts",
-    "Maintain consistency with existing mouse product specifications format"
+    "Follow the existing Product interface structure from frontend/src/data/products.ts",
+    "Maintain consistency with existing gaming mice product specifications and pricing patterns",
+    "Use the green neon accent color (--neon-green) consistent with the mice category"
   ],
   "nonGoals": [
-    "Creating new UI components or layouts",
-    "Modifying the ProductCard or ProductCategorySection components",
-    "Adding backend functionality or data persistence"
+    "Adding new product categories beyond gaming mice",
+    "Modifying the backend or data persistence layer",
+    "Changing the existing product card design or layout"
   ],
   "imageRequirements": {
     "required": [],

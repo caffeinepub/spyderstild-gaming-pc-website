@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-20T10:16:34.945Z",
+  "generatedAt": "2026-02-21T03:40:03.582Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,8 +11,8 @@
     "implemented": 0,
     "items": [
       {
-        "id": "REQ-17",
-        "summary": "Add a new Viper Elite gaming mouse product entry to the mice array in frontend/src/data/products.ts with complete specifications including name, price, description, and gaming-relevant specs (DPI range, polling rate, sensor type, weight, connectivity, etc.) following the existing product data structure",
+        "id": "REQ-1",
+        "summary": "Add a new Viper Elite gaming mouse product to the mice array in frontend/src/data/products.ts with name, description, price, and specifications following the existing product data structure",
         "status": "missing",
         "plannedFiles": [
           "frontend/src/data/products.ts"

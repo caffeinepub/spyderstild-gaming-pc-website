@@ -1,206 +1,28 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 13,
-  "summary": "Gaming PC website for www.spyderstild.shop showcasing high-end gaming peripherals (mice, keyboards, monitors) and PC builds including a gaming PC (9.3GB) and hacking PC (12.8GB) with a bold, futuristic design",
-  "architectural_notes": [
-    "Website domain: www.spyderstild.shop",
-    "Target audience: Gaming PC enthusiasts",
-    "Product focus: High-end gaming peripherals",
-    "Product offerings expanded to include complete PC builds",
-    "PC builds: Gaming PC (9.3GB), Hacking PC (12.8GB)"
-  ],
+  "projectStateVersion": 3,
+  "summary": "Gaming hardware catalog site featuring gaming mice products",
+  "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
-  "existing_features": [
-    {
-      "id": "feature-create-a-homepage-for-www-spyderstild-shop-that-showcases-high-end-gaming-peripherals-with-sections-for-mice-keyboards-and-monitors",
-      "title": "Create a homepage for www.spyderstild.shop that showcases high-end gaming peripherals with sections for mice, keyboards, and monitors",
-      "reqIds": [
-        "REQ-1"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-implement-a-bold-futuristic-visual-theme-with-dark-backgrounds-neon-accents-sharp-geometric-shapes-and-modern-gaming-inspired-typography-throughout-the-entire-website",
-      "title": "Implement a bold, futuristic visual theme with dark backgrounds, neon accents, sharp geometric shapes, and modern gaming-inspired typography throughout the entire website",
-      "reqIds": [
-        "REQ-2"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-create-product-showcase-sections-with-visual-cards-for-gaming-mice-keyboards-and-monitors-with-placeholder-product-information",
-      "title": "Create product showcase sections with visual cards for gaming mice, keyboards, and monitors with placeholder product information",
-      "reqIds": [
-        "REQ-3"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-add-navigation-header-with-site-branding-for-spyderstild-and-links-to-product-category-sections",
-      "title": "Add navigation header with site branding for Spyderstild and links to product category sections",
-      "reqIds": [
-        "REQ-4"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-generate-rendered-images-of-the-generated-hero-background-product-category-banners-and-spyderstild-logo-as-static-assets-in-frontend-public-assets-generated",
-      "title": "Generate rendered images of the generated hero background, product category banners, and Spyderstild logo as static assets in frontend/public/assets/generated",
-      "reqIds": [
-        "REQ-5"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-create-a-new-productcategorysection-for-pc-builds-showcasing-two-pre-built-systems-a-gaming-pc-9-3gb-and-a-hacking-pc-12-8gb",
-      "title": "Create a new ProductCategorySection for PC builds showcasing two pre-built systems: a gaming PC (9.3GB) and a hacking PC (12.8GB)",
-      "reqIds": [
-        "REQ-6"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-add-pc-builds-data-to-frontend-src-data-products-ts-with-gaming-pc-9-3gb-and-hacking-pc-12-8gb-specifications",
-      "title": "Add PC builds data to frontend/src/data/products.ts with gaming PC (9.3GB) and hacking PC (12.8GB) specifications",
-      "reqIds": [
-        "REQ-7"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-homepage-component-to-render-pc-builds-section-with-red-neon-accent-color-below-the-monitors-section",
-      "title": "Update HomePage component to render PC builds section with red neon accent color below the monitors section",
-      "reqIds": [
-        "REQ-8"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-header-navigation-to-include-pc-builds-link-that-scrolls-to-the-new-pc-builds-section",
-      "title": "Update Header navigation to include PC Builds link that scrolls to the new PC builds section",
-      "reqIds": [
-        "REQ-9"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-footer-navigation-to-include-pc-builds-category-link",
-      "title": "Update Footer navigation to include PC Builds category link",
-      "reqIds": [
-        "REQ-10"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-add-wireless-gaming-mouse-products-to-the-mice-array-in-frontend-src-data-products-ts-with-specifications-including-wireless-connectivity-battery-life-dpi-range-and-other-gaming-relevant-specs",
-      "title": "Add wireless gaming mouse products to the mice array in frontend/src/data/products.ts with specifications including wireless connectivity, battery life, DPI range, and other gaming-relevant specs",
-      "reqIds": [
-        "REQ-11"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-the-hacking-pc-product-card-styling-in-productcard-tsx-to-use-green-neon-accent-color-instead-of-red-when-rendering-the-hacking-pc",
-      "title": "Update the hacking PC product card styling in ProductCard.tsx to use green neon accent color instead of red when rendering the hacking PC",
-      "reqIds": [
-        "REQ-12"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-the-pc-builds-section-in-homepage-tsx-to-use-green-accent-color-for-the-hacking-pc-category-instead-of-red",
-      "title": "Update the PC Builds section in HomePage.tsx to use green accent color for the hacking PC category instead of red",
-      "reqIds": [
-        "REQ-13"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-add-a-hacker-face-background-image-to-the-hacking-pc-product-card-as-a-decorative-element-or-overlay",
-      "title": "Add a hacker face background image to the hacking PC product card as a decorative element or overlay",
-      "reqIds": [
-        "REQ-14"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-the-gaming-pc-product-card-styling-in-productcard-tsx-to-include-a-crazy-spider-background-image-as-a-decorative-element-or-overlay-similar-to-how-the-hacking-pc-has-a-hacker-face-background",
-      "title": "Update the gaming PC product card styling in ProductCard.tsx to include a crazy spider background image as a decorative element or overlay, similar to how the hacking PC has a hacker face background",
-      "reqIds": [
-        "REQ-15"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-render-the-generated-crazy-spider-background-image-as-a-static-asset-in-frontend-public-assets-generated",
-      "title": "Render the generated crazy spider background image as a static asset in frontend/public/assets/generated",
-      "reqIds": [
-        "REQ-16"
-      ],
-      "version": 1
-    }
-  ],
+  "existing_features": [],
   "new_feature_requests": [
     {
       "id": "AR-1",
-      "summary": "Create gaming PC showcase website with product displays",
+      "summary": "Add Viper Elite to gaming mice catalog",
       "reqIds": [],
       "status": "pending"
     },
     {
       "id": "AR-2",
-      "summary": "Design bold, futuristic visual theme for gaming brand",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-3",
-      "summary": "Add product categories for mice, keyboards, and monitors",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-4",
-      "summary": "Add PC builds section with gaming PC (9.3GB) and hacking PC (12.8GB)",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-5",
-      "summary": "Add wireless mouse products to mice category",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-6",
-      "summary": "Redesign hacking PC with green color scheme and hacker face background",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-7",
-      "summary": "Add crazy spider picture as background for gaming PC product card",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-8",
-      "summary": "Add Viper Elite mouse to mice product category",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-9",
-      "summary": "Add a new Viper Elite gaming mouse product entry to the mice array in frontend/src/data/products.ts with complete specifications including name, price, description, and gaming-relevant specs (DPI range, polling rate, sensor type, weight, connectivity, etc.) following the existing product data structure",
+      "summary": "Add a new Viper Elite gaming mouse product to the mice array in frontend/src/data/products.ts with name, description, price, and specifications following the existing product data structure",
       "reqIds": [
-        "REQ-17"
+        "REQ-1"
       ],
       "status": "pending"
     }
   ],
-  "gameProjectType": "none",
-  "projectName": "Spyderstild Gaming PC Website",
+  "projectName": "Add Viper Elite to gaming mice catalog",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }
