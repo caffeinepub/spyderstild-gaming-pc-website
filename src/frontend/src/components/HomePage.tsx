@@ -40,7 +40,7 @@ export default function HomePage() {
         description="Custom-built systems for gaming and professional work"
         bannerImage="/assets/generated/pc-builds-banner.dim_1200x400.png"
         products={pcBuilds}
-        accentColor="neon-red"
+        accentColor="neon-green"
       />
     </div>
   );

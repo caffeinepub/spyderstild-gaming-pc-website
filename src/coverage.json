@@ -1,87 +1,30 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-20T05:22:22.910Z",
+  "generatedAt": "2026-02-20T10:16:34.945Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 5,
-    "implemented": 5,
+    "total": 1,
+    "implemented": 0,
     "items": [
       {
-        "id": "REQ-10",
-        "summary": "Update Footer navigation to include PC Builds category link",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/Footer.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Footer.tsx"
-        ]
-      },
-      {
-        "id": "REQ-6",
-        "summary": "Create a new ProductCategorySection for PC builds showcasing two pre-built systems: a gaming PC (9.3GB) and a hacking PC (12.8GB)",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/HomePage.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/HomePage.tsx"
-        ]
-      },
-      {
-        "id": "REQ-7",
-        "summary": "Add PC builds data to frontend/src/data/products.ts with gaming PC (9.3GB) and hacking PC (12.8GB) specifications",
-        "status": "implemented",
+        "id": "REQ-17",
+        "summary": "Add a new Viper Elite gaming mouse product entry to the mice array in frontend/src/data/products.ts with complete specifications including name, price, description, and gaming-relevant specs (DPI range, polling rate, sensor type, weight, connectivity, etc.) following the existing product data structure",
+        "status": "missing",
         "plannedFiles": [
           "frontend/src/data/products.ts"
         ],
-        "matchedFiles": [
-          "frontend/src/data/products.ts"
-        ]
-      },
-      {
-        "id": "REQ-8",
-        "summary": "Update HomePage component to render PC builds section with red neon accent color below the monitors section",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/HomePage.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/HomePage.tsx"
-        ]
-      },
-      {
-        "id": "REQ-9",
-        "summary": "Update Header navigation to include PC Builds link that scrolls to the new PC builds section",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/Header.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Header.tsx"
-        ]
+        "matchedFiles": []
       }
     ]
   },
   "changedFiles": [
     "build-request.json",
-    "build-template/README.md",
     "feature_evidence.json",
-    "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/public/assets/generated/pc-builds-banner.dim_1200x400.png",
-    "frontend/src/components/Footer.tsx",
-    "frontend/src/components/Header.tsx",
-    "frontend/src/components/HomePage.tsx",
-    "frontend/src/components/ProductCard.tsx",
-    "frontend/src/components/ProductCategorySection.tsx",
-    "frontend/src/data/products.ts",
-    "frontend/src/index.css",
-    "frontend/tailwind.config.js",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

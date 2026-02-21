@@ -6,6 +6,10 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product, accentColor }: ProductCardProps) {
+  // Check if this is the Hacking PC or Gaming PC to apply special styling
+  const isHackingPC = product.name === 'Hacking PC';
+  const isGamingPC = product.name === 'Gaming PC';
+  
   const borderColorClass = {
     'neon-green': 'border-neon-green group-hover:border-neon-green',
     'neon-cyan': 'border-neon-cyan group-hover:border-neon-cyan',
@@ -34,6 +38,22 @@ export default function ProductCard({ product, accentColor }: ProductCardProps) 
       
       {/* Product Image Placeholder */}
       <div className="relative h-48 bg-gradient-to-br from-background to-muted overflow-hidden">
+        {/* Hacker face background for Hacking PC */}
+        {isHackingPC && (
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-20"
+            style={{ backgroundImage: 'url(/assets/generated/hacker-face.dim_800x800.png)' }}
+          ></div>
+        )}
+        
+        {/* Spider background for Gaming PC */}
+        {isGamingPC && (
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-20"
+            style={{ backgroundImage: 'url(/assets/generated/spider-gaming.dim_800x800.png)' }}
+          ></div>
+        )}
+        
         <div className="absolute inset-0 flex items-center justify-center">
           <div className={`text-6xl font-display ${textColorClass} opacity-20`}>
             {product.icon}

@@ -38,6 +38,39 @@ export const miceProducts: Product[] = [
       '100-Hour Battery',
       'Onboard Memory'
     ]
+  },
+  {
+    name: 'Spectre Wireless Pro',
+    description: 'Premium wireless gaming mouse with tri-mode connectivity and ultra-fast 8000Hz polling rate.',
+    icon: '👻',
+    specs: [
+      '2.4GHz Wireless + Bluetooth 5.0',
+      '8000Hz Polling Rate',
+      '26,000 DPI Sensor',
+      'Up to 150 Hours Battery Life'
+    ]
+  },
+  {
+    name: 'Nebula Wireless',
+    description: 'Featherweight wireless esports mouse with magnetic charging dock and customizable RGB effects.',
+    icon: '🌌',
+    specs: [
+      '2.4GHz HyperSpeed Wireless',
+      '62g Lightweight Design',
+      '1000Hz Polling Rate',
+      '90-Hour Battery + Magnetic Dock'
+    ]
+  },
+  {
+    name: 'Infinity Wireless',
+    description: 'Multi-device wireless gaming mouse with instant device switching and precision scroll wheel.',
+    icon: '♾️',
+    specs: [
+      'Bluetooth 5.0 Multi-Device',
+      '16,000 DPI Sensor',
+      '8 Programmable Buttons',
+      'Up to 70 Hours Battery Life'
+    ]
   }
 ];
 

@@ -1,12 +1,12 @@
 {
   "frontend/src/App.tsx": "Main application component that renders the Header, HomePage, and Footer in a flex layout structure.",
   "frontend/src/components/Header.tsx": "Sticky navigation header with Spyderstild logo, desktop/mobile navigation menus including PC Builds link, and smooth scroll functionality to all product sections.",
-  "frontend/src/components/HomePage.tsx": "Homepage component that orchestrates the hero section and four product category sections (mice, keyboards, monitors, and PC builds) with their respective data and accent colors.",
+  "frontend/src/components/HomePage.tsx": "Homepage component that orchestrates the hero section and four product category sections (mice, keyboards, monitors, and PC builds) with their respective data and accent colors, now using green accent for PC Builds section.",
   "frontend/src/components/HeroSection.tsx": "Full-screen hero section with background image, animated title with neon gradient, tagline, CTA button, and geometric decorative elements.",
   "frontend/src/components/ProductCategorySection.tsx": "Reusable section component that displays a category title, banner image, description, and grid of product cards with customizable accent colors including neon-green, neon-cyan, neon-orange, and neon-red.",
-  "frontend/src/components/ProductCard.tsx": "Product card component with hover effects, neon borders, placeholder image area with icon, product details, and specifications list supporting four accent colors (green, cyan, orange, red).",
+  "frontend/src/components/ProductCard.tsx": "Product card component with hover effects, neon borders, and conditional background images for both the Hacking PC (hacker face) and Gaming PC (spider), supporting four accent colors (green, cyan, orange, red).",
   "frontend/src/components/Footer.tsx": "Footer component with brand info, category links including PC Builds, social media icons, copyright notice, and Caffeine.ai attribution with UTM tracking.",
-  "frontend/src/data/products.ts": "Product data file containing arrays for mice, keyboards, monitors, and PC builds with names, descriptions, icons, and specifications following the Product interface.",
+  "frontend/src/data/products.ts": "Product data file containing arrays for mice (now with 6 products including 3 new wireless gaming mice), keyboards, monitors, and PC builds with names, descriptions, icons, and specifications following the Product interface.",
   "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks (currently empty as no backend functionality is needed for this static showcase).",
   "frontend/src/index.css": "Global styles with custom OKLCH color system featuring neon green/cyan/orange/red accents, imported Google Fonts, geometric clip-path utilities, and custom scrollbar styling.",
   "frontend/tailwind.config.js": "Tailwind configuration extended with neon color palette including red, custom font families, zero border radius for sharp geometric design, and custom utilities."

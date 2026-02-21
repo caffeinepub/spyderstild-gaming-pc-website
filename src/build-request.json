@@ -1,111 +1,41 @@
 {
   "kind": "build_request",
-  "title": "Add PC builds section with gaming PC and hacking PC",
-  "projectName": "Spyderstild",
+  "title": "Add Viper Elite gaming mouse to mice product category",
+  "projectName": "Spyderstild Gaming",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-6",
-      "text": "Create a new ProductCategorySection for PC builds showcasing two pre-built systems: a gaming PC (9.3GB) and a hacking PC (12.8GB)",
+      "id": "REQ-17",
+      "text": "Add a new Viper Elite gaming mouse product entry to the mice array in frontend/src/data/products.ts with complete specifications including name, price, description, and gaming-relevant specs (DPI range, polling rate, sensor type, weight, connectivity, etc.) following the existing product data structure",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-last"
         ],
         "quotes": [
-          "add one pc one for gaming 9.3GB, hacking pc 12.8GB"
+          "add mice in viper elite"
         ]
       },
       "acceptanceCriteria": [
-        "New PC builds section appears on the homepage below the existing product categories",
-        "Section displays two product cards: one for gaming PC with 9.3GB specification and one for hacking PC with 12.8GB specification",
-        "PC builds section follows the same visual design pattern as mice, keyboards, and monitors sections with neon accents",
-        "Each PC card includes name, description, icon, and key specifications matching the existing ProductCard component structure"
-      ]
-    },
-    {
-      "id": "REQ-7",
-      "text": "Add PC builds data to frontend/src/data/products.ts with gaming PC (9.3GB) and hacking PC (12.8GB) specifications",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-latest"
-        ],
-        "quotes": [
-          "add one pc one for gaming 9.3GB, hacking pc 12.8GB"
-        ]
-      },
-      "acceptanceCriteria": [
-        "New pcBuilds array exported from products.ts file",
-        "Gaming PC entry includes name, description, computer icon, and 9.3GB storage specification",
-        "Hacking PC entry includes name, description, computer icon, and 12.8GB storage specification",
-        "PC build entries follow the same Product interface structure as existing mice, keyboards, and monitors"
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "text": "Update HomePage component to render PC builds section with red neon accent color below the monitors section",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-latest"
-        ]
-      },
-      "acceptanceCriteria": [
-        "HomePage.tsx imports and uses pcBuilds data from products.ts",
-        "New ProductCategorySection component instance added for PC builds with id 'pc-builds'",
-        "PC builds section uses red accent color (consistent with existing neon color palette)",
-        "Section appears in correct order on the page after monitors section"
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "text": "Update Header navigation to include PC Builds link that scrolls to the new PC builds section",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-latest"
-        ]
-      },
-      "acceptanceCriteria": [
-        "PC Builds navigation item added to Header component menu",
-        "Clicking PC Builds link smoothly scrolls to the pc-builds section",
-        "Navigation link appears in both desktop and mobile menus",
-        "Link styling matches existing navigation items with hover effects"
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "text": "Update Footer navigation to include PC Builds category link",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-latest"
-        ]
-      },
-      "acceptanceCriteria": [
-        "PC Builds button added to Categories section in Footer",
-        "Button scrolls to pc-builds section when clicked",
-        "Button styling matches existing category buttons"
+        "A new product object for Viper Elite mouse is added to the mice array",
+        "Product includes all standard fields: name, price, description, image, specs",
+        "Specifications include gaming-relevant details like DPI, polling rate, sensor, weight",
+        "Product data follows the same structure and format as existing mice products",
+        "The new mouse appears in the Mice section on the homepage"
       ]
     }
   ],
   "constraints": [
-    "Use existing ProductCard and ProductCategorySection components without modification",
-    "Follow the established Product interface from frontend/src/data/products.ts",
-    "Maintain consistency with existing neon color palette (use red accent for PC builds)",
-    "Keep smooth scroll behavior for navigation"
+    "Follow the existing Product interface structure defined in frontend/src/data/products.ts",
+    "Maintain consistency with existing mouse product specifications format"
   ],
   "nonGoals": [
-    "Backend functionality for PC builds",
-    "Shopping cart or purchase features",
-    "Detailed PC configuration options",
-    "Price information or checkout flow"
+    "Creating new UI components or layouts",
+    "Modifying the ProductCard or ProductCategorySection components",
+    "Adding backend functionality or data persistence"
   ],
   "imageRequirements": {
-    "required": [
-      "Futuristic PC builds category banner with dark background and red neon accents showing high-performance gaming computers (pc-builds-banner.dim_1200x400.png)"
-    ],
+    "required": [],
     "edits": []
   }
 }
